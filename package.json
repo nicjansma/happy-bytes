@@ -1,0 +1,29 @@
+{
+  "name": "happy-bytes",
+  "version": "0.1.0",
+  "description": "Generate Compression Dictionaries (Compression Dictionary Transport, RFC 9842) from a live website and report their savings",
+  "type": "module",
+  "bin": {
+    "happy-bytes": "bin/happy-bytes.js"
+  },
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node bin/happy-bytes.js",
+    "test": "node --test",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "engines": {
+    "node": ">=22.15.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^10.15.0",
+    "eslint-config-nicjansma": "^1.2.1",
+    "eslint-plugin-jsdoc": "^65.5.4",
+    "globals": "^17.14.0"
+  }
+}
